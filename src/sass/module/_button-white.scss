@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.button-white {
+    display: inline-block;
+    padding: rem(18) rem(70);
+    color: $white-color;
+    border-radius: rem(50);
+    border: 1px solid $white-color;
+    letter-spacing: 0.04375em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s;
+    font-size: rem(14);
+    font-weight: $bold;
+}
+
+.button-white:hover {
+    opacity: 0.8;
+}

@@ -23,19 +23,230 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <!-- css -->
+  <!-- swiper -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./assets/js/script.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <header>
 
-  </header>
-  <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <div class="header__img">
+          <a href="" class="header__link">
+            <img src="./assets/images/common/logo.svg" alt="pondesign">
+          </a>
+        </div>
+      </h1>
+      <button class="header__drawer hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <div class="header__sp-nav sp-nav js-sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item">
+            <a href="#" class="sp-nav__link">news</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#" class="sp-nav__link">service</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#" class="sp-nav__link">works</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#" class="sp-nav__link">company</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#" class="sp-nav__link">recruit</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="#" class="sp-nav__link">contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__pc-nav pc-nav js-page-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
+            <a href="" class="pc-nav__link">news</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="" class="pc-nav__link">service</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="" class="pc-nav__link">works</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="" class="pc-nav__link">company</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="" class="pc-nav__link">recruit</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="" class="pc-nav__link">contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </header>
+
+  <main>
+    <div class="main-view">
+      <div class="main-view__inner">
+        <div class="main-view__title">web design specialist</div>
+        <div class="main-view__subtitle">お客様の夢を叶える<br class="u-mobile">Webサイトを制作</div>
+        <a href="#" class="main-view__button button-white">contact</a>
+      </div>
+      <div class="main-scroll">scroll</div>
+    </div>
+
+    <div class="news section-news">
+      <div class="news__inner">
+        <div class="news__title section-header">
+          <h2 class="section-header__title">news</h2>
+          <span class="section-header__subtitle">お知らせ</span>
+        </div>
+        <div class="news__contents">
+
+          <div class="news__content">
+            <div class="news__info">
+              <time class="news__date date" datetime="2030-02-01">2030.02.01</time>
+              <span class="news__category category">お知らせ</span>
+            </div>
+            <div class="news__block">
+              <a href="" class="news__text">
+                Webデザインニュースサイト「ウェブマガジン」に取材いただきました
+              </a>   
+            </div>
+          </div>
+
+            <div class="news__content">
+              <div class="news__info">
+                <time class="news__date date" datetime="2030-02-01">2030.02.01</time>
+                <span class="news__category category">制作実績</span>
+              </div>
+              <div class="news__block">
+                <a href="" class="news__text">
+                  Smoothiesta様のWebサイトを制作いたしました
+                </a>   
+              </div>
+            </div>
+
+              <div class="news__content">
+                <div class="news__info">
+                  <time class="news__date date" datetime="2030-02-01">2030.02.01</time>
+                  <span class="news__category category">採用</span>
+                </div>
+                <div class="news__block">
+                  <a href="" class="news__text">
+                    Webデザイナーを１名募集中です！
+                  </a>   
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="service section-service">
+      <div class="service__inner">
+        <h2 class="service__title section-header">
+          <h2 class="section-header__title">service</h2>
+          <span class="section-header__subtitle">事業内容</span>
+        </h2>
+
+        <div class="service__items cards">
+
+          <div class="cards__item card">
+            <figure class="card__img">
+              <img src="./assets/images/common/service01.jpg" alt="Webサイト制作">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">
+                Webサイト制作
+              </h3>
+              <p class="card__text">新規サイトはもちろん、サイトリニューアルやランディングページ制作も行っております。</p>
+            </div>
+          </div>
+
+          <div class="cards__item card">
+            <figure class="card__img">
+              <img src="./assets/images/common/service02.jpg" alt="Webサイト制作">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">
+                Webサイト制作
+              </h3>
+              <p class="card__text">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案が可能です。</p>
+            </div>
+          </div>
+
+          <div class="cards__item card">
+            <figure class="card__img">
+              <img src="./assets/images/common/service03.jpg" alt="アプリ開発">
+            </figure>
+            <div class="card__body">
+              <h3 class="card__title">
+                アプリ開発
+              </h3>
+              <p class="card__text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+            </div>
+          </div>
+        
+        </div>
+        <a href="#" class="service-button button">more</a>
+
+      </div>
+
+    </div>
+
+      <section class="works works-section">
+        <div class="works__contents">
+
+          <div class="works__swiper js-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/images/common/works/smoothiesta.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="works__content">
+            <div class="works__title">
+              <h2 class="section-header__title">works</h2>
+              <span class="section-header__subtitle">制作実績</span>
+            </div>
+            <p class="works__text">
+              様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！
+            </p>
+            <a href="#" class="works__button button">more</a>
+          </div>
+
+        </div>
+        
+
+        
+      </section>
+
+    <!-- ボタン -->
+    <!-- <a href="#" class="button">more</a> -->
+    <!-- ボタン白 -->
+    <!-- <a href="#" class="button-white">contact</a> -->
+    <!-- カテゴリ -->
+    <!-- <span class="category">お知らせ</span> -->
+    <!-- セクションタイトル -->
+    <!-- <div class="section-header">
+      <h2 class="section-header__title">news</h2>
+      <span class="section-header__subtitle">お知らせ</span>
+    </div> -->
+
   </main>
   <footer>
 

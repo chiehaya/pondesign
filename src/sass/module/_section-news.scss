@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.section-news {
+    margin-top: rem(40.5);
+    @include mq(md){
+        margin-top: rem(72.5);
+    }
+}

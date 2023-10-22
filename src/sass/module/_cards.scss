@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+    @include mq(md){
+        flex-direction: row;
+    }
+}
+
+.cards__item {
+    @include mq(md){
+        width: calc((100% - 1.875rem * 2) / 3);
+    }
+}

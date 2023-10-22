@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.main-view {
+    height: (811 / 375) * 100vw;
+    background-image: url(../../assets/images/common/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    @include mq(md){
+        height: (767.5 / 1440) * 100vw;
+        justify-content: center;
+    }
+}
+
+.main-view__inner {
+    padding: 0 rem(20);
+    @include mq(md){
+        text-align: center;
+    }
+}
+
+.main-view__title {
+    font-size: rem(40);
+    font-family: $second-font-family;
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: $bold;
+    @include mq(md){
+        font-size: rem(72);
+    }
+}
+
+.main-view__subtitle {
+    margin-top: rem(17);
+    margin-bottom: rem(28);
+    color: $white-color;
+    font-size: rem(16);
+    letter-spacing: 0.1em;
+    line-height: 1.8125;
+    @include mq(md){
+        font-size: rem(24);
+    }
+}
+
+.main-scroll {
+    color: $white-color;
+    position: absolute;
+    bottom: rem(55.5);
+    right: rem(15);
+    text-transform: uppercase;
+    font-size: rem(12);
+    writing-mode: vertical-rl;
+    letter-spacing: 0.15em;
+    font-family: $second-font-family;
+    font-weight: $bold;
+    @include mq(md){
+        right: rem(30);
+    }
+}
+
+.main-scroll::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: $white-color;
+    width: rem(1);
+    height: rem(50);
+    bottom: rem(-55.5);
+    left: rem(8.3);
+    animation: scroll 1.5s ease-in-out infinite;
+}
+
+@keyframes scroll {
+    0%{
+        height: rem(-50);
+        opacity: 1;
+	}
+
+    90% {
+        opacity: 1;
+    }
+
+	100%{
+        height: 0;
+        opacity: 0;
+	}
+}
+

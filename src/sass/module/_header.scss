@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.header {
+    height: rem(64);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    @include mq(md){
+        height: rem(86);
+    }
+}
+
+.header__inner {
+    padding-left: rem(20);
+    padding-right: rem(15);
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(md){
+        padding: 0 rem(30);
+    }
+}
+
+.header__logo {
+    max-width: rem(124);
+    width: 100%;
+    position: relative;
+    @include mq(md){
+        max-width: rem(161);
+    }
+}
+
+.header__drawer {
+    display: block;
+    @include mq(md){
+        display: none;
+    }
+}
+
+.header__sp-nav {
+    padding-top: rem(209);
+    padding-bottom: rem(200);
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    @include mq(md){
+        display: none;
+    }
+}
+
+.header__pc-nav {
+    display: none;
+    @include mq(md){
+        display: block;
+    }
+}

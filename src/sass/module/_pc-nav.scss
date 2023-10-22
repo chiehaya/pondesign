@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.pc-nav {
+    display: none;
+    height: inherit;
+}
+
+.pc-nav__items {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+}
+
+.pc-nav__item {
+    height: inherit;
+}
+
+.pc-nav__link {
+    color: $white-color;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: $second-font-family;
+    font-weight: $bold;
+}

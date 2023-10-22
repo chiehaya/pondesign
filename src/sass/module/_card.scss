@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.card {
+    display: block;
+}
+
+.card__img {
+    aspect-ratio: 350 / 210;
+    width: 100%;
+}
+
+.card__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card__body {
+    margin-top: rem(12);
+    display: block;
+}
+
+.card__title {
+    font-size: rem(18);
+    line-height: calc(22 / 18);
+    display: block;
+    letter-spacing: 0.05em;
+    font-family: $second-font-family;
+    font-weight: $bold;
+}
+
+.card__text {
+    margin-top: rem(10);
+    font-size: rem(14);
+    line-height: calc(25 / 14);
+    letter-spacing: 0.05em;
+    text-align: left;
+    @include mq(md){
+        margin-top: rem(17);
+        font-size: rem(15);
+    }
+}

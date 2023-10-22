@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.section-header__title {
+    font-size: rem(30);
+    letter-spacing: 0.09375em;
+    line-height: 1;
+    font-family: $second-font-family;
+    font-weight: $bold;
+    color: $main-color;
+    text-transform: uppercase;
+    @include mq(md){
+        font-size: rem(36);
+    }
+}
+
+.section-header__subtitle {
+    font-size: rem(13);
+    letter-spacing: 0.040625em;
+    color: $main-color;
+    margin-top: rem(2);
+}

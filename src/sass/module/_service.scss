@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.service__inner {
+    padding: 0 rem(20);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    @include mq(md){
+        padding: 0 rem(25);
+    }
+}
+
+.service__items {
+    margin-top: rem(28);
+}
+
+.service-button {
+    margin-top: rem(41);
+    @include mq(md){
+        margin-top: rem(25) ;
+    }
+}

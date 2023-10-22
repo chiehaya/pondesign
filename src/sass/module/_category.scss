@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.category {
+    background-color: $gray-color;
+    display: inline-block;
+    font-size: rem(11);
+    font-weight: $bold;
+    font-family: $second-font-family;
+    padding: rem(5) 0;
+    letter-spacing: 0.034375em;
+    height: rem(19);
+    width: rem(82);
+    line-height: 1;
+    border-radius: rem(50);
+    text-align: center;
+    @include mq(md){
+        font-size: rem(12);
+    }
+}

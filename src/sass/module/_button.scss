@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.button {
+    display: inline-block;
+    padding: rem(18) rem(76);
+    background: linear-gradient(90deg, #7633A4, #250D65);
+    color: $white-color;
+    border-radius: rem(50);
+    letter-spacing: 0.04375em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s;
+    position: relative;
+    z-index: 0;
+    font-size: rem(14);
+    font-weight: $bold;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #250D65, #7633A4);
+    transition: .5s;
+    z-index: -1;
+    opacity: 0;
+    border-radius: rem(50);
+}
+
+.button:hover::after {
+    opacity: 1;
+}
