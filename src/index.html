@@ -18,14 +18,14 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <!-- css -->
-  <!-- swiper -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./assets/js/script.js"></script>
@@ -33,7 +33,7 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header js-header">
     <div class="header__inner">
       <h1 class="header__logo">
         <div class="header__img">
@@ -95,7 +95,7 @@
   </header>
 
   <main>
-    <div class="main-view">
+    <div class="main-view js-main-view">
       <div class="main-view__inner">
         <div class="main-view__title">web design specialist</div>
         <div class="main-view__subtitle">お客様の夢を叶える<br class="u-mobile">Webサイトを制作</div>
@@ -114,7 +114,7 @@
 
           <div class="news__content">
             <div class="news__info">
-              <time class="news__date date" datetime="2030-02-01">2030.02.01</time>
+              <time class="news__date" datetime="2030-02-01">2030.02.01</time>
               <span class="news__category category">お知らせ</span>
             </div>
             <div class="news__block">
@@ -207,17 +207,26 @@
 
       <section class="works works-section">
         <div class="works__contents">
-
-          <div class="works__swiper js-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/images/common/works/smoothiesta.jpg" alt="">
-                </div>
+          <div class="works__container">
+            <div class="works__swiper js-swiper">
+              <div class="works__swiper-wrpaeer swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/images/common/works/smoothiesta.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/common/works/lamina.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/common/works/tabilog.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/images/common/works/citylab.jpg" alt="">
+                  </div>
+              </div>
             </div>
-            
-            <div class="swiper-pagination"></div>
+            <div class="works__swiper-pagination swiper-pagination"></div>
           </div>
-
+          
           <div class="works__content">
             <div class="works__title">
               <h2 class="section-header__title">works</h2>
@@ -230,9 +239,53 @@
           </div>
 
         </div>
-        
 
-        
+      </section>
+
+      <section class="company section-company">
+        <div class="company__inner">
+          <div class="company__contents">
+            <div class="company__title section-header">
+              <h2 class="section-header__title">company</h2>
+            <span class="section-header__subtitle">私たちについて</span>
+            </div>
+            <p class="company__message">
+              <span>サイトのゴール =</span>
+              <span>夢を叶えること</span>
+            </p>
+            <p class="company__text">
+              お客様の夢を叶えること。<br>それがWebサイトのゴールであり、<br class="u-mobile">私たちが目指すことです。<br>だからこそちゃんと成果を出すサイトを<br class="u-mobile">全力でお作りします。<br>お客様の笑顔を見たい。<br>夢を実現する手助けをさせてください。
+            </p>
+            <a href="" class="company__button button">more</a>  
+          </div>
+        </div>
+      </section>
+
+      <section class="recruit section-recruit">
+        <div class="recruit__inner">
+          <div class="recruit__contents">
+            <div class="recruit__title section-header">
+              <h2 class="section-header__title">recruit</h2>
+              <span class="section-header__subtitle">採用情報</span>
+            </div>
+            <p class="recruit__text">私たちと一緒に働きませんか？</p>
+            <a href="" class="recruit__button button">more</a>
+          </div>
+          <div class="recruit__img">
+            <img src="./assets/images/common/recruit.jpg" alt="recruit">
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-contact">
+        <div class="contact__inner">
+            <div class="contact__title section-header">
+              <h2 class="section-header__title">contact</h2>
+              <span class="section-header__subtitle">お問い合わせ</span>
+            </div>
+            <p class="contact__text">Webサイトの制作のご依頼やお見積りなど、<br class="u-mobile">お気軽にご相談ください。</p>
+            <a href="" class="contact__button button">more</a>
+        </div>
       </section>
 
     <!-- ボタン -->
@@ -248,9 +301,43 @@
     </div> -->
 
   </main>
-  <footer>
 
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__nav page-nav">
+        <ul class="page-nav__items">
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">home</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">news</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">service</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">works</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">company</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">recruit</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="" class="page-nav__link">contact</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copy">&copy; PON DESIGN</p>
+    </div>
+    
   </footer>
+
+  <div class="page-top">
+    <a href="#"></a>
+  </div>
+
 </body>
 
 </html>

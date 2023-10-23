@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.footer {
+    background-color: $black-color;
+    padding: rem(60) 0;
+}   
+
+.footer__inner {
+    padding: 0 rem(30);
+}
+
+.footer__copy {
+    color: #A798B7;
+    text-align: center;
+    font-size: rem(10);
+    font-family: $second-font-family;
+    margin-top: rem(30);
+    @include mq(md){
+        margin-top: rem(22);
+    }
+}

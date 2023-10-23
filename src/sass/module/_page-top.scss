@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.page-top a {
+    background-color: $white-color;
+    bottom: rem(20);
+    right: rem(20);
+    border: 1px solid #707070;
+    width: rem(50);
+    height: rem(50);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.page-top a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #707070;
+    width: rem(1);
+    height: rem(22);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50%;
+}
+
+.page-top a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 1px solid #707070;
+    border-left: 1px solid #707070;
+    width: rem(10);
+    height: rem(10);
+    top: rem(14);
+    right: 41%;
+    transform: rotate(45deg);
+}
+
+

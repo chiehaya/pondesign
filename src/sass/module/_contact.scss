@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.contact {
+    background-color: $section-color;
+}
+
+.contact__inner {
+    text-align: center;
+    padding: 0 rem(20);
+}
+
+.contact__text {
+    margin-top: rem(26);
+    margin-bottom: rem(28);
+}

@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.company {
+    text-align: center;
+    background-image: url(../../assets/images/common/sp_bg-circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    @include mq(md){
+        background-image: url(../../assets/images/common/bg-circle.png);
+        background-size: contain;
+        padding: 0 rem(25);
+    }
+}
+
+.company__inner {
+    @include mq(md){
+        max-width: rem(1300);
+        margin: auto;
+        background-image: url(../../assets/images/common/bg-face.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.company__contents {
+    padding: 0 rem(40);
+    @include mq(md){
+        padding: 0;
+        max-width: rem(864);
+        margin: auto;
+    }
+}
+
+.company__message {
+    margin-top: rem(22);
+    font-size: rem(32);
+    line-height: (48 / 32);
+    @include mq(md){
+        mask-size: rem(40);
+    }
+}
+
+.company__message span {
+    position: relative;
+    display: inline-block;
+}
+
+.company__message span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #F5F534;
+    width: 110%;
+    height: rem(8);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+}
+
+
+.company__text {
+    margin-top: rem(39);
+    font-size: rem(14);
+    line-height: (25 / 14);
+    @include mq(md){
+        font-size: rem(15);
+    }
+}
+
+.company__button {
+    margin-top: rem(25);
+    margin-bottom: rem(136);
+}
+

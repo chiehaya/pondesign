@@ -37,7 +37,6 @@
         display: flex;
         align-items: flex-start;
         column-gap: rem(20);
-        row-gap: rem(22);
         flex-wrap: wrap;
     }
 }
@@ -45,7 +44,7 @@
 .news__content:not(:first-child){
     margin-top: rem(35);
     @include mq(md){
-        margin-top: 0;
+        margin-top: rem(5);
     }
 }
 

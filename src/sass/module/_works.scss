@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .works{
-    background: linear-gradient(180deg, transparent 0%, transparent  21.3%, $gray-color 21.3%, $gray-color 100%);
+    background: linear-gradient(180deg, transparent 0%, transparent  21.3%, $section-color 21.3%, $section-color 100%);
     width: 100%;
     @include mq(md){
         display: flex;
@@ -27,11 +27,24 @@
     }
 }
 
-.works__swiper {
+.works__container {
     width: 100%;
+    position: relative;
     @include mq(md){
         width: 65.88%;
     }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal  {
+    bottom: rem(-25);
+    display: flex;
+    justify-content: end;
+}
+
+.swiper-pagination-bullet {
+    background-color: $main-color;
+    height: rem(8);
+    width: rem(8);
 }
 
 .works__content {
@@ -40,10 +53,6 @@
     @include mq(md){
         width: 34.12%;
     }
-}
-
-.works__title {
-
 }
 
 .works__text {

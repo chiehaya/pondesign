@@ -7,9 +7,14 @@
     left: 0;
     right: 0;
     z-index: 99999;
+    transition: .3s;
     @include mq(md){
         height: rem(86);
     }
+}
+
+.header.is-fixed {
+    background-color: $main-color;
 }
 
 .header__inner {
