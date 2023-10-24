@@ -18,7 +18,7 @@
 .recruit__contents {
     text-align: center;
     @include mq(md){
-        max-width: 41.1%;
+        max-width: 40.1%;
         width: 100%;
     }
 }
@@ -43,14 +43,19 @@
 }
 
 .recruit__img {
+    max-width: 100%;
+    // ↑必要に応じて記述
+    width: 100%;
+    display: flex;
+    aspect-ratio: 375 / 140 ;
     @include mq(md){
         max-width: 59.9%;
-        width: 100%;
+        aspect-ratio: 665 / 332;
     }
 }
 
 .recruit__img img {
-    aspect-ratio: (664 / 332);
-    width: 100%;
+    flex: 1;
+    object-fit: cover;
 }
 

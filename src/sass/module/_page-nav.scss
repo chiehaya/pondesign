@@ -20,11 +20,13 @@
     }
 }
 
+// aタグに以下　（displayは場所によって変える）
 .page-nav__link {
     position: relative;
     display: inline-block;
 }
 
+// aタグにbefore
 .page-nav__link::before {
     display: block;
     content: "";
@@ -35,6 +37,7 @@
     bottom: rem(-3);
     transition: transform 0.3s;
     transform: scale(0, 1);
+    // ↓ここを変えると、いろいろ変えれるよ
     transform-origin: center;
     background-color: $white-color;
 }
